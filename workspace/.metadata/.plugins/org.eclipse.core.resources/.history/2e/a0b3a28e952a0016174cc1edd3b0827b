@@ -1,0 +1,23 @@
+package main;
+
+public class TriangleNumbers {
+	public static void main(String[] args) {
+		long trinum = 0;
+		for(int i=0;divisorNum(trinum)<5;i++){
+			System.out.println("i: " + i);
+			System.out.println(trinum);
+			trinum = trinum+ i;
+		}
+		System.out.println("Final: "+trinum);
+	}
+	public static int divisorNum(long num){
+		int count = 0;
+		for(int i=2;i<=num;i++){
+			if(num%1==0){
+				count++;
+			}
+		}
+		return count;	
+	}
+
+}

@@ -1,0 +1,26 @@
+package main;
+
+public class TriangleNumbers {
+	public static void main(String[] args) {
+		long trinum = 0;
+		for(long i=0;trinum<76576500;i++){
+			//System.out.println("i: " + i);
+			
+			trinum += i;
+			//System.out.println("\n"+trinum);
+		}
+		System.out.println("Final: "+trinum);
+		System.out.println(divisorNum(76576500));
+	}
+	public static long divisorNum(long num){
+		long count = 0;
+		for(long i=2;i<=num;i++){
+			if(num%i==0){
+				count++;
+				//System.out.print(i+" ");
+			}
+		}
+		return count;	
+	}
+
+}

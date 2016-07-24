@@ -12,7 +12,7 @@ public class MaximumPath {
 		FileReader fr = new FileReader(file);
 		BufferedReader reader = new BufferedReader(fr);
 		while ((reader.readLine()) != null) {
-			test
+			
 		}
 		reader.close();
 		

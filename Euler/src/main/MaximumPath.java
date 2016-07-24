@@ -27,7 +27,7 @@ public class MaximumPath {
 	private static void printValues(int[] values) {
 		System.out.println();
 		for (int i : values) {
-			System.out.print("\\t" + i);
+			System.out.print("\t" + i);
 		}
 	}
 	

@@ -47,8 +47,9 @@ public class MaximumPath {
 				triangle[i][j++] = value;
 			}
 			i++;
+			tokens.close();
 		}
-
+		br.close();
 		return triangle;
 	}
 

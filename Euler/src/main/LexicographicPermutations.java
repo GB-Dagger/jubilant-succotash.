@@ -1,12 +1,8 @@
 package main;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class LexicographicPermutations {
 
-	public static void main2(String[] args) {
+	public static void main(String[] args) {
 		int count = 1;
 		long i = 123456789;
 		long start = System.currentTimeMillis();

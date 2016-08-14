@@ -1,16 +1,28 @@
 package main;
 
+import java.math.BigDecimal;
+
 public class ReciprocalCycles {
 	public static long longest = 0;
 	public static void main(String[] args) {
-		for(int d=0;d<1000;d++){
-			
+		for(int d=1;d<10;d++){
+			long num = divide(d);
+			if(num == 0) System.out.println(d + " repeats");;
+			else System.out.println(num);
 		}
 	}
-	public static long divide(int divisor){
-		
-		return divisor;
+	public static long divide(float divisor){
+		BigDecimal dec = new BigDecimal(1);
+		try{
+		dec.divide(new BigDecimal(divisor));
+		}
+		catch(Exception e){
+			return 0;
+		}
+		//System.out.println(dec);
+		return (int)divisor;
+	}
+	public static recurring(int divisor){
 		
 	}
-	
 }

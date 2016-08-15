@@ -3,7 +3,7 @@ package main;
 import java.math.BigDecimal;
 
 public class ReciprocalCycles {
-	public static long longest = 22;
+	public static BigDecimal longest = new BigDecimal(22);
 	public static long LongestDivisor = 0;
 	public static void main(String[] args) {
 		for(int d=1;d<1000;d++){

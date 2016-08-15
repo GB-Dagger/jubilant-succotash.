@@ -13,7 +13,7 @@ public class ReciprocalCycles {
 			recurring(d);
 		}
 	}
-	public static long divide(float divisor){	
+	public static long divide(int divisor){	
 		BigDecimal dec = new BigDecimal(1);
 		try{
 		dec.divide(new BigDecimal(divisor));
@@ -21,7 +21,7 @@ public class ReciprocalCycles {
 		catch(Exception e){
 			return 0;
 		}
-		return (int)divisor;
+		return divisor;
 	}
 	public static long recurring(int d){
 		int x = d;

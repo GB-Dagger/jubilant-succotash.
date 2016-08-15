@@ -23,7 +23,7 @@ public class ReciprocalCycles {
 		return (int)divisor;
 	}
 	public static long recurring(int d){
-			//hi the jasdklasdfasdf
+			//hi the jasdklasdfasdfasdfasd
 		return 1;
 	}
 }

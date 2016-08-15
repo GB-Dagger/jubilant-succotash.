@@ -7,8 +7,9 @@ public class ReciprocalCycles {
 	public static void main(String[] args) {
 		for(int d=1;d<10;d++){
 			long num = divide(d);
-			if(num == 0) System.out.println(d + " repeats");;
-			else System.out.println(num);
+			if(num == 0) System.out.println(d + " repeats");
+			else continue;
+			recurring(d);
 		}
 	}
 	public static long divide(float divisor){
@@ -19,10 +20,10 @@ public class ReciprocalCycles {
 		catch(Exception e){
 			return 0;
 		}
-		//System.out.println(dec);
 		return (int)divisor;
 	}
-	public static recurring(int divisor){
-		
+	public static long recurring(int d){
+		//if()
+		return 1;
 	}
 }

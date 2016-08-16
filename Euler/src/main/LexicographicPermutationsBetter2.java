@@ -13,25 +13,35 @@ public class LexicographicPermutationsBetter2 {
 		System.out.println(permutationNumbers.size());
 	}
 	public static void startRecurse(boolean[] digitsAvailable){
-		recurseMethod(1, digitsAvailable, 0);
+		recurseMethod(1, digitsAvailable, 0, 10);
 	}
-	public static void recurseMethod(int digit, boolean[] digitsAvailable, int number){
-		System.out.println("h");
-		for(int i = 0; i < 10; i++){
+	public static void recurseMethod(int digit, boolean[] digitsAvailable, int number, int size){
+		//System.out.println("h");
+		for(int i = 0; i < size; i++){
 			if(digitsAvailable[i]){
-				if(digit < 10 ){
-					System.out.println("h");
-					digitsAvailable[i] = false;
+				if(digit < size ){
+					//System.out.println("h");
+					boolean[] tmpDigitsAvailable = digitsAvailable;
+					tmpDigitsAvailable[i] = false;
 					digit+=1;
-					recurseMethod(digit, digitsAvailable, (number*10) + i);
-				}else if(digit == 10){
-					System.out.println("i");
+					recurseMethod(digit, newbool(digit), (number*10) + i,size--);
+				}else if(digit >= 10){
+					System.out.println(i);
+					System.out.println(i);
+
 					int num = (number*10) + i;
-					permutationNumbers.add(num, permutationCount);
+					permutationNumbers.add(num);
 					permutationCount++;
 					System.out.println(num);
 				}
 			}
 		}
+	}
+	public static boolean[] newbool(int d){
+		boolean[] bool = new boolean[d];
+		for(boolean v: bool){
+			v = true;
+		}
+		return bool;
 	}
 }

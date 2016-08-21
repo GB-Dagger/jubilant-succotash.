@@ -13,7 +13,7 @@ public class QuadraticPrimes {
 			for(int b = -999; b<=999; b++){
 				boolean continueBool = true;
 				for(int n = 0; continueBool; n++){
-					int num = n*n+a*n+b*n*n+a*n+b;
+					int num = n*n+a*n+b;
 					if(!isPrime(num)){
 						continueBool = false;
 						if(n-1 > consecutivePrimeCount){

@@ -29,12 +29,13 @@ public class QuadraticPrimes {
 		System.out.println("A:" + aSave + " B:" + bSave + " PrimeCount:" + consecutivePrimeCount);
 		
 	}
-	public static  boolean isPrime(int in){
-		for(int i = 1;  i <= in/2; i++){
-			if(in%i == 0){
-				return false;
-			}
-		}
-		return true;
+	public static  boolean isPrime(int n){
+		if(n == 2) return true;
+	    if (n%2==0) return false;
+	    for(int i=3;i*i<=n;i+=2) {
+	        if(n%i==0)
+	            return false;
+	    }
+	    return true;
 	}
 }

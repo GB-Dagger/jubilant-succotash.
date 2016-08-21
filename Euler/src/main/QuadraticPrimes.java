@@ -13,7 +13,7 @@ public class QuadraticPrimes {
 			for(int b = -999; b<=999; b++){
 				boolean continueBool = true;
 				for(int n = 0; continueBool; n++){
-					int num = n*n+a*n+b;
+					long num = n*n+a*n+b;
 					if(!isPrime(num)){
 						continueBool = false;
 						if(n-1 > consecutivePrimeCount){
@@ -27,9 +27,10 @@ public class QuadraticPrimes {
 			}
 		}
 		System.out.println("A:" + aSave + " B:" + bSave + " PrimeCount:" + consecutivePrimeCount);
-		
+		System.out.println("Answer: " + aSave*bSave);
 	}
-	public static  boolean isPrime(int n){
+	public static  boolean isPrime(long n){
+		if(n<=0) return false;
 		if(n == 2) return true;
 	    if (n%2==0) return false;
 	    for(int i=3;i*i<=n;i+=2) {

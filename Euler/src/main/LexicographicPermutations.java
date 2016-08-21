@@ -24,7 +24,7 @@ public class LexicographicPermutations {
 	public static boolean matchesNum(long num){
 		int[] digits = {0,1,2,3,4,5,6,7,8,9};	
 		boolean matches = true;
-		for(Integer i: digits){
+		for(int i: digits){
 			String snum = Long.toString(num);
 			if(snum.length() == 9) snum = "0" + snum;
 			if(snum.contains(Integer.toString(i))) matches = true;
